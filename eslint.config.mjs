@@ -4,5 +4,6 @@ export default [
   {
     ...love,
     files: ["**/*.js", "**/*.ts"],
+    ignores: ["dist", "node_modules"],
   },
 ];
