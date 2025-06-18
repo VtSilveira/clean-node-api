@@ -8,6 +8,7 @@ export default [
     rules: {
       ...love.rules,
       "@typescript-eslint/no-magic-numbers": "off",
+      "@typescript-eslint/strict-boolean-expressions": "off",
       "@typescript-eslint/no-unsafe-assignment": "warn",
       "@typescript-eslint/no-unsafe-member-access": "warn",
       "@typescript-eslint/class-methods-use-this": "warn",
