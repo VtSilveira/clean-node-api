@@ -1,4 +1,5 @@
 import { MissingParamError } from "../errors/missing-param-error";
+import { badRequest } from "../helpers/http-helper";
 import type { HttpRequest, HttpResponse } from "../protocols/http";
 
 export class SignUpController {
@@ -7,10 +8,7 @@ export class SignUpController {
 
     for (const param of params) {
       if (!httpRequest.body[param]) {
-        return {
-          statusCode: 400,
-          body: new MissingParamError(param),
-        };
+        return badRequest(new MissingParamError(param));
       }
     }
 
