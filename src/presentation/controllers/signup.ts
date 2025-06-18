@@ -4,7 +4,7 @@ import type { HttpRequest, HttpResponse } from "../protocols/http";
 
 export class SignUpController {
   handle(httpRequest: HttpRequest): HttpResponse {
-    const params = ["name", "email"];
+    const params = ["name", "email", "password", "passwordConfirmation"];
 
     for (const param of params) {
       if (!httpRequest.body[param]) {
