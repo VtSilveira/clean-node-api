@@ -17,6 +17,8 @@ export default [
       "@typescript-eslint/no-unsafe-argument": "off",
       "@typescript-eslint/prefer-destructuring": "off",
       "@typescript-eslint/no-explicit-any": "warn",
+      "@typescript-eslint/return-await": "off",
+      "promise/avoid-new": "off",
     },
   },
 ];
