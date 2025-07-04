@@ -4,7 +4,7 @@ export default [
   {
     ...love,
     files: ["**/*.js", "**/*.ts"],
-    ignores: ["dist", "node_modules"],
+    ignores: ["dist", "node_modules", "coverage"],
     rules: {
       ...love.rules,
       "@typescript-eslint/no-magic-numbers": "off",
